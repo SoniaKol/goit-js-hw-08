@@ -29,8 +29,6 @@ img {
   cursor: pointer;
 }
 .gallery-image {
-  width: 360px;
-  height: 200px;
   transition: transform 250ms ease-in-out;
 }
 

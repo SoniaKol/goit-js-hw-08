@@ -74,8 +74,7 @@ function clickHandler(event) {
     return;
   }
 
-  const link = event.target.closest(".gallery-link");
-
+  const link = event.target.dataset.source;
   const instance = basicLightbox.create(`
     <img src="${link}" width="800" height="600">
 `);
@@ -92,7 +91,7 @@ function createMarkUp(arr) {
     <img
       class="gallery-image"
       src="${preview}"
-      data-source="${origin}"
+      data-source="${original}"
       alt="${description}"
     />
   </a>
